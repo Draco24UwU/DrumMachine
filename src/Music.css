@@ -1,0 +1,29 @@
+#myRange::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Quita el estilo predeterminado del thumb en WebKit */
+    appearance: none; /* Quita el estilo predeterminado del thumb */
+    width: 25px; /* Ancho del thumb */
+    height: 25px; /* Altura del thumb */
+    background: #4CAF50; /* Color de fondo del thumb */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el thumb */
+  }
+
+#VolumenSlider{
+    -webkit-appearance: none; /* Quita el estilo predeterminado en WebKit (Safari, Chrome) */
+    width: 100%; /* Ancho del rango */
+    height: 10px; /* Altura del rango */
+    background: #d3d3d3; /* Color de fondo */
+    outline: none; /* Quita el contorno predeterminado */
+    opacity: 0.7; /* Opacidad */
+    -webkit-transition: .2s; /* Transición para hover en WebKit */
+    transition: opacity .2s; /* Transición para hover */
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, blue, transparent); /* Define un gradiente de azul a transparente */
+  }
+  
+  /* Para Firefox */
+  input[type=range]::-moz-range-track {
+    background: linear-gradient(to right, blue, transparent); /* Define un gradiente de azul a transparente */
+  }
+
